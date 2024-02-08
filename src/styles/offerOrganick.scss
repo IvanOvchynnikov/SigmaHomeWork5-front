@@ -1,0 +1,17 @@
+@import 'variables';
+.offerOrganick{
+  padding: 200px 0;
+  background: $blue;
+  &__title{
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  &__products{
+    margin-top: 50px;
+    display: flex;
+    gap: 1.2vw;
+  }
+}
+
+

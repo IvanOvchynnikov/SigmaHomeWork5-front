@@ -1,0 +1,30 @@
+@import "variables";
+.button{
+  display: flex;
+  padding: 23px 57px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: $blue;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  width: 450px;
+  transition: 0.3s all;
+}
+.button_clicked{
+  display: flex;
+  padding: 23px 57px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  font-size: 25px;
+  font-weight: 700;
+  width: 450px;
+  transition: 0.3s all;
+  background: $turquoise;
+  color: $blue;
+  width: 400px;
+}

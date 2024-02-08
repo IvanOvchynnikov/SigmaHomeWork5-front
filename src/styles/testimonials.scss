@@ -1,0 +1,61 @@
+@import "variables";
+.testimonials{
+  background: url('../img/testimonials/background.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 164px 0;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    font-size: 50px;
+    margin-top: 15px;
+  }
+  .reviewSlider{
+    margin-top: 50px;
+    max-width: 780px;
+    &-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+      img{
+        margin-top: 20px;
+      }
+      &-subtitle{
+        text-align: center;
+        margin-top: 25px;
+      }
+      &-title{
+        margin-top: 25px;
+        font-size: 1.2vw;
+        font-weight: 600;
+      }
+    }
+  }
+  &__circles{
+    margin-top: 100px;
+    padding: 100px 0 0;
+    border-top: 1px solid $grey;
+    display: flex;
+    gap: 60px;
+  }
+  &__circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/testimonials/circle.svg') center no-repeat;
+    width: 220px;
+    height: 220px;
+    &-number{
+      font-size: 50px;
+    }
+    &-title{
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+}

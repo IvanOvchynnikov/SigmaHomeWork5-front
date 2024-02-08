@@ -1,0 +1,44 @@
+@import "variables";
+.about{
+  background: $light-grey;
+  padding: 190px 0;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__title{
+    font-size: 2.6vw;
+    margin-top: 10px;
+  }
+  &__subtitle{
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  &__item{
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+    margin-top: 30px;
+    &-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 101px;
+      height: 101px;
+      border-radius: 20px;
+      background: white;
+    }
+    &-content{
+      width:480px;
+    }
+    &-title{
+      font-size: 1.3vw;
+      margin-bottom: 10px;
+    }
+    &_button{
+      margin-top: 50px;
+      width: 220px;
+    }
+  }
+}

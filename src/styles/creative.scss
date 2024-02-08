@@ -1,0 +1,36 @@
+@import "variables";
+.creative{
+  background: $creativeBg;
+  padding: 187px 0;
+  display: flex;
+  justify-content: space-between;
+  &__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 612px;
+    height: 583px;
+    &:nth-child(1) {
+      background: url(../img/creative/organic_juice.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    &:nth-child(2) {
+      background: url(../img/creative/organic_food.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    &:nth-child(3) {
+      background: url(../img/creative/nuts_cookies.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    &-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 33px 83px;
+      border-radius: 20px;
+      background: #FFF;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}

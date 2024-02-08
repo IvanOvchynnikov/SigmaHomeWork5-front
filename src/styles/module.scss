@@ -1,0 +1,125 @@
+@import "variables";
+.module{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(244, 244, 244, 0.82);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+  &__wrapper{
+    background: #FFFAFA;
+    width: 100%;
+    .container{
+      position: relative;
+      padding: 96px 0 114px 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__image{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #F9F8F8;
+    &-type{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 5px 12px 6px 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background: $blue;
+      min-width: 70px;
+    }
+    img{
+      width: 80%;
+      height: 80%;
+      mix-blend-mode: multiply;
+    }
+  }
+  &__functional{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+
+  }
+  &__menu{
+    max-width: 650px;
+    &-name{
+      color: $blue;
+      font-family: Roboto;
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    &-price{
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    &-quantity{
+      display: flex;
+      align-items: center;
+      margin-top: 9px;
+      gap:20px;
+      color: $blue;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 700;
+      &-input{
+        width: 135px;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        border: 2px solid #274C5B;
+        background: white;
+        input{
+          width: 80%;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &-description{
+    margin-top: 70px;
+    display: flex;
+    gap: 20px;
+    &-text{
+      margin-top: 30px;
+      width: 80%;
+    }
+  }
+  &__close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    width: 64px;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: $blue;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

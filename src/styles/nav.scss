@@ -1,0 +1,58 @@
+@import 'variables';
+
+.nav{
+  padding: 69px 0;
+  font-family: Roboto;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a{
+    color: #274C5B;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.98vw;
+    gap: 2px;
+  }
+  &__links{
+    display: flex;
+    color: #274C5B;
+    font-size: 1.04vw;
+    gap: 1.5vw;
+    a{
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  }
+  &__actions{
+    display: flex;
+    align-items: center;
+    &-search{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px;
+      input{
+        width: 80%;
+        margin-left: 20px;
+      }
+      border-radius: 36px;
+      background: $light-grey;
+      width: 376px;
+    }
+    &-cart{
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border-radius: 33px;
+      border: 1px solid #E0E0E0;
+      min-width: 159px;
+      gap: 0.8vw;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/pageNotFound.scss'
-import notfound from '../img/pagenotfound/notfound.svg'
-import Title from "./UI/Title";
-import Subtitle from "./UI/Subtitle";
-import UIButton from "./UI/UIButton";
+import '../../styles/pageNotFound.scss'
+import notfound from '../../img/pagenotfound/notfound.svg'
+import Title from "../UI/Title";
+import Subtitle from "../UI/Subtitle";
+import UIButton from "../UI/UIButton";
 import {NavLink} from "react-router-dom";
 const PageNotFound = () => {
     return (

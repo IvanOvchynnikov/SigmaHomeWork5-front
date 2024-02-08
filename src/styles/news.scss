@@ -1,0 +1,101 @@
+@import "variables";
+.news{
+  padding-bottom: 70px;
+  &__content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 10px;
+    &-title{
+      width: 700px;
+      font-size: 50px;
+    }
+  }
+  &__cards{
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-between;
+    &-item{
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      border-radius: 30px;
+      height: 529px;
+      width: 791px;
+      &:nth-child(1){
+        background: url('../img/news/lists.png');
+        background-size: 100% 100%;
+      }
+      &:nth-child(2){
+        background: url('../img/news/cherries.png');
+        background-size: 100% 100%;
+      }
+      &-date{
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        width: 82px;
+        height: 82px;
+        color: $blue;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      &-content{
+        max-width: 600px;
+        display: inline-flex;
+        padding: 46px 57px 60px 57px;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 31px 34px 30px 30px;
+        background: #FFF;
+        box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+        transform: translateY(5vw);
+        &-author{
+          color: $blue;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        &-title{
+          font-size: 25px;
+        }
+        &-subtitle{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  &__subscribe{
+    margin-top: 200px;
+    padding: 105px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../img/news/background.jpg") center/cover no-repeat;
+    border-radius: 30px;
+
+    &-title{
+      color: white;
+      font-size: 50px;
+      max-width: 350px;
+    }
+    &-email{
+      display: flex;
+      gap: 5px;
+    }
+    &-input{
+      min-width: 350px;
+      padding: 28px;
+      border-radius: 16px;
+      background: #FFF;
+    }
+    .error{
+      border: 2px solid red;
+    }
+  }
+}

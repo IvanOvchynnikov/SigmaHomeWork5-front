@@ -1,0 +1,19 @@
+@import "variables";
+.product__price{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  &_nonAct{
+    color: #B8B8B8;
+    text-align: center;
+    font-size: 0.78vw;
+    font-weight: 600;
+    text-decoration: line-through $dark-grey 1px;
+  }
+  &_act{
+    color: $blue;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: 700;
+  }
+}

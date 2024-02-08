@@ -1,0 +1,51 @@
+@import 'variables';
+.cartItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &-title{
+      font-size: 34px;
+      font-weight: 600;
+    }
+    img{
+      width: 80%;
+      height: 90%;
+      mix-blend-mode: multiply;
+    }
+    &-img{
+      width: 292px;
+      height: 226px;
+      border-radius: 30px;
+      background: #FAECD8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__quantity{
+    display: flex;
+    align-items: center;
+    &-title{
+      font-size: 30px;
+      margin-right: 22px;
+    }
+    &-input{
+      margin-right: 100px;
+    }
+    &-del{
+      width: 64px;
+      height: 46px;
+      border-radius: 16px;
+      background: $blue;
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+  }
+
+}

@@ -1,0 +1,33 @@
+@import "variables";
+.ui__button{
+  display: flex;
+  padding: 28px 39px;
+  max-width: 220px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: $yellow;
+  color: $blue;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s all;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+.button_blue{
+  color: white;
+  background: $blue;
+}
+.button_black{
+  background: #1E1E1E;
+  color: white;
+}
+.button_white{
+  background: white;
+  border: 2px solid $blue;
+  color: $blue
+}

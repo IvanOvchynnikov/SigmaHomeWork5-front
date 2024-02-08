@@ -1,0 +1,28 @@
+@import "variables";
+
+.econic{
+  display: flex;
+  align-items: center;
+  &__content{
+    max-width: 900px;
+    padding: 80px 90px;
+    background: white;
+    border-radius: 25px;
+    transform: translateX(-5vw);
+    &-title{
+      margin-top: 10px;
+      font-size: 50px;
+    }
+    &-item{
+      margin-top: 35px;
+      &-title{
+        font-size: 25px;
+        font-weight: 500;
+      }
+      &-subtitle{
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}

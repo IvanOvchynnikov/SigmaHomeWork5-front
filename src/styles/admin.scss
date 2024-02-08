@@ -1,0 +1,64 @@
+@import "variables";
+.admin{
+  &__title{
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__order{
+    overflow: auto;
+    border: 2px solid $grey;
+    padding: 1vw;
+    margin-top: 40px;
+    transition: 0.3s all;
+    animation: creationOrder 0.5s ease-in;
+    &-panel{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-close{
+      display: flex;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      background: $blue;
+      color: white;
+      font-weight: 700;
+    }
+
+  }
+
+  &__orders{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10%;
+    p{
+      color: $blue;
+      font-size: 1.4vw;
+      font-weight: 700;
+    }
+    &-item{
+      padding: 5px 15px;
+      color: $dark-grey;
+      font-size: 1.2vw;
+      font-weight: 600;
+      &-products{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3vw;
+        padding: 5px 15px;
+        font-size: 1vw;
+      }
+
+    }
+  }
+}
+@keyframes creationOrder {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

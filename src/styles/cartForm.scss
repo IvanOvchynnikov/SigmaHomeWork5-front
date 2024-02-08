@@ -1,0 +1,107 @@
+@import "variables";
+.cartMain__form{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 100px;
+  color: $blue;
+  font-size: 0.9vw;
+  font-weight: 600;
+  place-items: center;
+  .error{
+    border: 2px solid red;
+  }
+  &-input1{
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid $green;
+    background: white;
+    ::placeholder{
+      color: $grey;
+    }
+    font-size: 1vw;
+    color: $blue;
+    font-style: italic;
+    font-weight: 400;
+    padding: 28px;
+  }
+  &-input2{
+    border-radius: 16px;
+    border: 1px solid $green;
+    background: white;
+    width: 90%;
+    padding: 28px 28px 70px 28px;
+  }
+  &-name{
+    position: relative;
+    width: 80%;
+    &::before{
+      content: 'Full Name*';
+      position: absolute;
+      top: -40%;
+      left: 2%;
+      min-width: 100px;
+      z-index: 1;
+    }
+  }
+  &-email{
+    position: relative;
+    width: 80%;
+    &::before{
+      content: 'Your Email*';
+      position: absolute;
+      top: -40%;
+      left: 2%;
+      min-width: 100px;
+      z-index: 1;
+    }
+  }
+  &-phone{
+    position: relative;
+    width: 80%;
+    &::before{
+      content: 'Phone number*';
+      position: absolute;
+      top: -40%;
+      left: 2%;
+      min-width: 100px;
+      z-index: 1;
+    }
+  }
+  &-address{
+    position: relative;
+    width: 80%;
+    &::before{
+      content: 'Address*';
+      position: absolute;
+      top: -40%;
+      left: 2%;
+      min-width: 100px;
+      z-index: 1;
+    }
+  }
+  &-extra{
+    position: relative;
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    &::before{
+      content: 'Message*';
+      position: absolute;
+      top: -30%;
+      left: 1%;
+      min-width: 100px;
+      z-index: 1;
+    }
+  }
+  &-button{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    button{
+      width:220px;
+    }
+  }
+}

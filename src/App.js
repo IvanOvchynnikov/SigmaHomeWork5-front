@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./components/nav/Nav";
+import './styles/common.scss'
+import './styles/reset.scss';
+import {Router,Route, Routes} from "react-router-dom";
+import Home from './pages/Home';
+import {useState} from "react";
+import Cart from "./pages/Cart";
+import OrderFinished from "./pages/OrderFinished";
+import Footer from "./components/footer/Footer";
+import PageNotFound from "./components/pagenotfound/PageNotFound";
+import Admin from "./components/admin/Admin";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    const [cartItems,setCartItems]=useState([]);
+
+    return (
+        <div className="App">
+          <Nav cartItems={cartItems}/>
+            <Routes>
+                <Route path='/' element={<Home cartItems={cartItems} setCartItems={setCartItems}/>}/>
+                <Route path='/cart' element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>}/>
+                <Route path='/orderFinished' element={<OrderFinished/>}/>
+                <Route path='/admin' element={<Admin/>}/>}/>
+                <Route path='/*' element={<PageNotFound/>}/>}/>
+            </Routes>
+            <Footer/>
+        </div>
   );
 }
 

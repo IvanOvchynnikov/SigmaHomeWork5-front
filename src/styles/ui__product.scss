@@ -1,0 +1,42 @@
+@import "variables";
+.product{
+  cursor: pointer;
+  padding: 30px 30px 20px 30px;
+  width: 335px;
+  height: 483px;
+  border-radius: 30px;
+  background: $light-grey;
+  display: flex;
+  flex-direction: column;
+  &__type{
+    display: flex;
+    width: 100px;
+    padding: 5px 12px 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: $blue;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  &__img{
+    mix-blend-mode: multiply;
+    width: 320px;
+    height: 320px;
+  }
+  &__name{
+    font-size: 20px;
+    color:$blue;
+    font-weight: 600;
+    font-family: Roboto;
+    padding-bottom: 13px;
+    border-bottom: 1px #DEDDDD solid;
+  }
+  &__rate{
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
